@@ -1,6 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import constants from './constants/app-constants'
+
+console.log(constants)
+
 class App extends React.Component {
   constructor(props) {
     super(props)
