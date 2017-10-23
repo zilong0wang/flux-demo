@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { testing } from './actions/app.action'
+import { incrementActions } from './actions/app-actions'
 
 class App extends React.Component {
   constructor(props) {
@@ -13,9 +13,7 @@ class App extends React.Component {
   }
 
   increment() {
-    this.setState({
-      count: this.state.count + 1
-    })
+    incrementActions.incrementCount()
   }
 
   render() {
